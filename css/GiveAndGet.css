@@ -1,0 +1,99 @@
+html,body{
+    margin:0;
+    height: 100%;
+    width: 100%;
+}
+
+.background-image { 
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+
+	position: fixed;
+
+  background: url(../img/photo.JPG) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  	filter: blur(5px);
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px);
+}
+
+.content{
+	position: absolute;
+	left:0;
+	right: 0;
+	z-index: 100;
+}
+
+
+#headerDiv{
+	font-family: Futura;
+	font-style: italic;
+	color: white;
+	font-size: 68pt;
+	text-align: center;
+	margin-top: 20%;
+}
+
+#messageHolder{
+	margin-top: 50px;
+	width:60%;
+	margin-left: 30%;
+}
+
+#messageInput{
+	resize:none;
+	float:left;
+	font-family: "Open Sans";
+	width:50%;
+	height:200px;
+	font-size: 20pt;
+	background-color: transparent;
+	border: none;
+	color: white;
+
+}
+
+#messageInput:focus, input:focus{
+    outline: 0;
+}
+
+#sendMessage{
+	float:left;
+	margin-top: 85px;
+	height: 30px;
+	width: 50px;
+	background-color: #d78698;
+	border: none;
+	box-shadow: 0.5px 1px 5px 1px;
+	margin-left: 5%;
+	cursor: pointer;
+	font-size: 15pt;
+}
+#sendMessage:hover{
+	background-color: #d889aa;
+}
+
+#giveArrow{
+	height:25px;
+	cursor: pointer;
+}
+
+
+#results{
+	height:50px;
+	width:50%;
+	margin-left: 25%;
+	border-style:solid;
+	border-color: #fd9eb2;
+	color:white;
+	border-radius: 2px;
+	font-family: "Open Sans";
+	text-align: center;
+}
